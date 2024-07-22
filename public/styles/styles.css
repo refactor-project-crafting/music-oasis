@@ -14,12 +14,21 @@ a {
   text-decoration: none;
 }
 
+button,
+input {
+  font: inherit;
+}
+
 button {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  font: inherit;
+}
+
+input {
+  border: none;
+  padding: 0;
 }
 
 .main-header {
@@ -71,5 +80,21 @@ button {
     right: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
   }
+
+  .search-box {
+    padding: 5px 10px;
+
+    &::placeholder {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.813rem;
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
 }
